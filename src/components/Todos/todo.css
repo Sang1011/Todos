@@ -1,0 +1,73 @@
+/* Khung tổng thể của trang Todos */
+.todos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Căn giữa form thêm todo */
+.todos-form {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input và button trong form */
+.todos-form input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.todos-form button {
+    width: 18%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todos-form button:hover {
+    background-color: darkgreen;
+}
+
+/* Danh sách các todo */
+.todos-list {
+    width: 50%;
+    list-style-type: none;
+    padding: 0;
+}
+
+.todos-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.todos-list li button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todos-list li button:hover {
+    background-color: darkred;
+}
